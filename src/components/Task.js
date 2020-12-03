@@ -18,7 +18,7 @@ const Task =({startDate})=>{
     dispatch({type:FILTER_ALL});
   }
   
-   useEffect(()=> task.task? setDisable(false): setDisable(true))
+   useEffect(()=> task.task? setDisable(false): setDisable(true),[task.task])
     return(
     <div className='taskDiv '>
         <form onSubmit={handleAddTask}>

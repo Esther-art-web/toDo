@@ -9,7 +9,7 @@ const ModalBox = ({index, modalOpen, setModalOpen, selectedCounter}) => {
     const closeBackDrop = useRef(null);
     const closePageModal = useRef(null);
     const [editTask, setEditTask] = useState('');
-    const {task, dispatch} = useContext(TaskContext);
+    const { dispatch} = useContext(TaskContext);
     const closeModal=()=>{
         setModalOpen(false);
     }
