@@ -13,7 +13,7 @@ const Task =({startDate})=>{
     dispatch({type: NEW_TASK, value: e.target.value })
   }
   const handleAddTask=()=>{
-   var date= startDate.toUTCString();
+   var date= startDate.toDateString();
     dispatch({type: ADD_NOTE, payload:{date, value: task.value}});
     dispatch({type:FILTER_ALL});
   }

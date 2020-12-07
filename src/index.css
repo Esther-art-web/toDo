@@ -52,7 +52,7 @@ body {
   color: #aaaaaa;
   position: fixed;
   top: 2;
-  right: 120px;
+  right: 25%;
   font-size: 28px;
   font-weight: bold;
 }
@@ -361,5 +361,9 @@ button.delete{
    .badge{
      top: 30px;
      left: 260px;
+   }
+   .close{
+     top: 300px;
+     right: 300px;
    }
 }
